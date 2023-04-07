@@ -46,7 +46,13 @@ const Banner = ({
   </Flex>
 );
 
-export default function Home({ propertiesForSale, propertiesForRent }) {
+export default function Home({
+  propertiesForSale,
+  propertiesForRent,
+}: {
+  propertiesForSale: any;
+  propertiesForRent: any;
+}) {
   return (
     <>
       <Box>
@@ -61,7 +67,7 @@ export default function Home({ propertiesForSale, propertiesForRent }) {
           imageUrl="https://bayut-production.s3.eu-central-1.amazonaws.com/image/145426814/33973352624c48628e41f2ec460faba4"
         />
         <Flex flexWrap="wrap">
-          {propertiesForRent.map((prop) => (
+          {propertiesForRent.map((prop: any) => (
             <Property property={prop} key={prop.id} />
           ))}
         </Flex>
@@ -77,7 +83,7 @@ export default function Home({ propertiesForSale, propertiesForRent }) {
         />
       </Box>
       <Flex flexWrap="wrap">
-        {propertiesForSale.map((prop) => (
+        {propertiesForSale.map((prop: any) => (
           <Property property={prop} key={prop.id} />
         ))}
       </Flex>
