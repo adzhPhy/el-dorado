@@ -104,8 +104,8 @@ const PropertyDetails = ({
           </Text>
         )}
         <Flex flexWrap="wrap">
-          {amenities?.map((item) =>
-            item?.amenities?.map((amenity) => (
+          {amenities?.map((item: any) =>
+            item?.amenities?.map((amenity: any) => (
               <Text
                 key={amenity.text}
                 fontWeight="bold"
