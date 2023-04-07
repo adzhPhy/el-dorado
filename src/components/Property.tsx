@@ -9,14 +9,14 @@ import millify from "millify";
 
 interface PropertyProps {
   property: {
-    coverPhoto: string;
+    coverPhoto: any;
     price: number;
     rentFrequency: string | null;
     rooms: number;
     title: string;
     baths: number;
     area: number;
-    agency: string;
+    agency: any;
     isVerified: boolean;
     externalID: string;
   };
