@@ -34,9 +34,9 @@ const RightArrow = () => {
   );
 };
 
-const ImageScrollBar = ({ data }) => (
+const ImageScrollBar = ({ data }: { data: any }) => (
   <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
-    {data.map((item) => (
+    {data.map((item: any) => (
       <Box
         key={item.id}
         width="910px"
